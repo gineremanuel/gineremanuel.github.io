@@ -8,8 +8,10 @@
   color: white;
 }
 .score{
-  height: 6vh;
+  height: 8vh;
   background-color: orange;
+  display: flex;
+  justify-content: center;
 }
 
 .score p {  
@@ -17,15 +19,13 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  height: 9%;
-  width: 20%;
+  height: 15vh;
+  width: 15vh;
   background-color: white;
   color: blue;
   position: absolute;
-  top: 1.5vh;
-  right: 18vh;
   border: 5px, solid, orange;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 600;
 }
 
@@ -41,7 +41,6 @@ main {
   justify-content: space-around;
   height: 70vh;
   flex-flow: column wrap;
-  align-items: center;
   font-family: "Mitr", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -50,15 +49,13 @@ main {
 
 .question_bubble {
   height: 10vh;
-  width: 40vh;
   background-color: white;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
-  margin-top: 50px;
-  block-size: fit-content;
+  margin: auto 20px;
   padding: 10px;
 
 }
@@ -69,8 +66,7 @@ main {
 
 
 .answersBtn {
-  width: 40vh;
-  height: 5vh;
+  width: 80%;
   border-radius: 15px;
   align-content: center;
   margin-bottom: 25px;
@@ -82,13 +78,13 @@ main {
 }
 
 .questionSectionBtns {
-  width: 15vh;
+  width: 30%;
   border-radius: 30px;
   border: 1px solid orange;
-  height: 5vh;
   background-color: orange;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
+  padding: 13px;
 }
 
 .correctAnswer {
@@ -143,4 +139,5 @@ main {
   font-weight: bold;
   font-size: 35px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: fit-content;
 }
