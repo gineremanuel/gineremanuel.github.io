@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Pagina de Ejemplo</title>
+	<head>
+<html>
+<body>
+	<h1 id="mititulo"> Titulo desde el Html </h1>
+	<button id="miboton"> Cambiar Texto </button>
+
+	<script>
+		document.addEventListener('click', e => {
+      const $titleSelector = document.getElementById('mititulo')
+      if(e.target.matches('#miboton')) {
+        $titleSelector.innerHTML = 'Titulo cambiado desde Javascript'
+      }
+    })
+	</script>
+</body>

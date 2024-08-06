@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Pacifico&family=Varela+Round&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.score{
+  height: 6vh;
+  background-color: orange;
+}
+
+.score p {  
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 9%;
+  width: 20%;
+  background-color: white;
+  color: blue;
+  position: absolute;
+  top: 1.5vh;
+  right: 18vh;
+  border: 5px, solid, orange;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+main {
+  height: 100vh;
+  background-image: url("background_game.avif");
+  background-repeat: no-repeat;
+
+}
+
+.questionAnswerSection {
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+  flex-flow: column wrap;
+  align-items: center;
+  font-family: "Mitr", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.question_bubble {
+  height: 10vh;
+  width: 40vh;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 50px;
+  block-size: fit-content;
+  padding: 10px;
+
+}
+
+.question {
+  color: blue;
+}
+
+
+.answersBtn {
+  width: 40vh;
+  height: 5vh;
+  border-radius: 15px;
+  align-content: center;
+  margin-bottom: 25px;
+  background-color: white;
+  color: blue;
+  border: 1px solid white;
+  block-size: fit-content;
+  padding: 7px;
+}
+
+.questionSectionBtns {
+  width: 15vh;
+  border-radius: 30px;
+  border: 1px solid orange;
+  height: 5vh;
+  background-color: orange;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.correctAnswer {
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+}
+
+.wrongAnswer {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
+
+.hide {
+  display: none
+}
+
+.homeTitle {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.homeTitleSpan {
+  font-size: 80px;
+  font-family: "Mitr", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.homeSection {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  height: 35vh;
+}
+
+.homeBtn {
+  width: 19vh;
+  border-radius: 30px;
+  border: 1px solid orange;
+  height: 6vh;
+  background-color: orange;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
