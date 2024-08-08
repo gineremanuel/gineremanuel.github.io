@@ -3,21 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fourth Test</title>
+  <style>
+    main {
+      display: flex;
+      justify-content: space-evenly;
+      flex-flow: row wrap;
+      align-content: center;
+
+    }
+    .card {
+      border: 1px solid lightslategray;
+      padding: 10px;
+      width: 25%;
+      margin: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card img {
+      border-radius: 100px;
+    }
+  </style>
+  <title>Fifth Test</title>
 </head>
 <body>
   <main>
   </main>
   <script type="module">
-    const MyArray = ["Pedro", "Juan", "Violeta", "Amapola"],
+    const MyArray = [
+      {
+        "name": "Jonh Smith",
+        "title": "Newbie Programer",
+        "buttontext": "Follow",
+        "avatar": "https://reqres.in/img/faces/7-image.jpg"
+      },
+      {
+        "name": "Alesha Doe",
+        "title": "FullStack Programer",
+        "buttontext": "Add Friend",
+        "avatar": "https://reqres.in/img/faces/8-image.jpg"
+      },
+      {
+        "name": "Jessica Jones", 
+        "title": "Copywriter",
+        "buttontext": "View Text", 
+        "avatar": "https://reqres.in/img/faces/11-image.jpg"
+      },
+      {
+        "name": "Jonh Smith",
+        "title": "Newbie Programer",
+        "buttontext": "Follow",
+        "avatar": "https://reqres.in/img/faces/7-image.jpg"
+      },
+      {
+        "name": "Alesha Doe",
+        "title": "FullStack Programer",
+        "buttontext": "Add Friend",
+        "avatar": "https://reqres.in/img/faces/8-image.jpg"
+      },
+      {
+        "name": "Jessica Jones", 
+        "title": "Copywriter",
+        "buttontext": "View Text", 
+        "avatar": "https://reqres.in/img/faces/11-image.jpg"
+      },
+      {
+        "name": "Jonh Smith",
+        "title": "Newbie Programer",
+        "buttontext": "Follow",
+        "avatar": "https://reqres.in/img/faces/7-image.jpg"
+      },
+      {
+        "name": "Alesha Doe",
+        "title": "FullStack Programer",
+        "buttontext": "Add Friend",
+        "avatar": "https://reqres.in/img/faces/8-image.jpg"
+      },
+      {
+        "name": "Jessica Jones", 
+        "title": "Copywriter",
+        "buttontext": "View Text", 
+        "avatar": "https://reqres.in/img/faces/11-image.jpg"
+      }],
       d = document,
       $fragment = d.createDocumentFragment(),
       $main = d.querySelector('main');
     
-    MyArray.forEach(name => {
-      const $fieldName = d.createElement('p');
-      $fragment.appendChild($fieldName)
-      $fieldName.innerHTML = name;
+    MyArray.forEach(user => {
+      const $userCard = d.createElement('card'),
+        $userAvatar = d.createElement('img'),
+        $userName = d.createElement('h3'),
+        $userTitle = d.createElement('p'),
+        $userBtn = d.createElement('button')
+
+        $userCard.classList.add('card')
+
+        $userAvatar.setAttribute("src", user.avatar);
+        $userName.innerHTML = user.name
+        $userTitle.innerHTML = user.title
+        $userBtn.textContent = user.buttontext
+        $userCard.appendChild($userAvatar)
+        $userCard.appendChild($userName)
+        $userCard.appendChild($userTitle)
+        $userCard.appendChild($userBtn)
+
+
+        $fragment.appendChild($userCard)
     })
     $main.appendChild($fragment)
   </script>
